@@ -1,32 +1,60 @@
+// solution 1
+// class Solution {
+// public:
+//      bool allCapital(string word){
+
+//         for(char ch:word){
+//             if(ch <'A' || ch > 'Z')
+//             return false;
+
+//         }
+//         return true;
+        
+//      }
+//      bool allSmall(string word){
+
+//         for(char ch:word){
+//             if(ch <'a' || ch > 'z')
+//             return false;
+
+//         }
+//         return true;
+
+//      }
+//     bool detectCapitalUse(string word) {
+
+//         if(allCapital(word) || allSmall(word) || allSmall(word.substr(1))){
+//             return true;
+//         }
+       
+//         return false;
+        
+//     }
+// };
+//solution 2
 class Solution {
 public:
-     bool allCapital(string word){
+     bool detectCapitalUse(string word){
+        int countCapital=0;
 
-        for(char ch:word){
-            if(ch <'A' || ch > 'Z')
-            return false;
-
-        }
-        return true;
-        
+        for(char  &ch:word){
+            if(isupper(ch))//ch>='a' && ch<='z'
+            countCapital++;
      }
-     bool allSmall(string word){
 
-        for(char ch:word){
-            if(ch <'a' || ch > 'z')
-            return false;
-
-        }
+     if(countCapital == 0||countCapital==word.length()||(countCapital == 1 && isupper(word[0])))
         return true;
 
-     }
-    bool detectCapitalUse(string word) {
+    // if(countCapital==word.length())
+    //     return true;
 
-        if(allCapital(word) || allSmall(word) || allSmall(word.substr(1))){
-            return true;
-        }
-       
-        return false;
-        
-    }
+    // if(countCapital=1 && isupper(word[0]))
+    //     return true;
+
+
+    return false;
+
+
+
+     }
 };
