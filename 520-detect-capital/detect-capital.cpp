@@ -44,6 +44,7 @@ public:
 
      if(countCapital == 0||countCapital==word.length()||(countCapital == 1 && isupper(word[0])))
         return true;
+    return false;
 
     // if(countCapital==word.length())
     //     return true;
@@ -52,7 +53,7 @@ public:
     //     return true;
 
 
-    return false;
+    
 
 
 
