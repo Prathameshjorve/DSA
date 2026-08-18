@@ -9,6 +9,7 @@ public:
             return true; //it is close for this side close 
 
         }
+        //its checking for visiting
         grid[r][c] = 1; //mark visited
 
 
