@@ -6,7 +6,7 @@ public:
         int m = s.length();
         int n = p.length();
         
-        for(char &ch : p)
+        for(char &ch : p)//check for  all the string
             arr[ch-'a']++;
         
         int i = 0, j = 0;
