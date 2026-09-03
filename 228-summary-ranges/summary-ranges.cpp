@@ -8,7 +8,7 @@ public:
 
             int start =nums[i];
 
-            while(i+1 <n && nums[i]+1 ==nums[i+1]==1 ){
+            while(i+1 <n && nums[i]+1 ==nums[i+1] ){
                 i++;
             }
             if(start != nums[i]){
