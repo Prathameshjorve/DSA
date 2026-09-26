@@ -7,7 +7,7 @@ public:
 
         for(int num : nums){
             if(num > maxVal){
-                maxVal=num;
+                maxVal = num;
 
                 result = 0;
                 streak = 0;
@@ -18,7 +18,7 @@ public:
 
 
             }else{
-                streak=0;
+                streak = 0;
             }
 
             result = max(result,streak);
