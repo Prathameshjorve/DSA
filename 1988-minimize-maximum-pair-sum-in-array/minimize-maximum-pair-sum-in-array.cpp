@@ -13,7 +13,8 @@ public:
         while(i < j){
             int sum = nums[i]+ nums[j];
             result=max(result,sum);
-            i++;j--;
+            i++;
+            j--;
 
         }
         return result;
