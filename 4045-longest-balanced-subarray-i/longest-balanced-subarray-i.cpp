@@ -20,6 +20,8 @@ public:
             
             if(even.size() == odd.size()){
                 maxLen = max(maxLen,j-i+1);
+
+                //maxlength means the lenght of even number
             }
         }
         }
