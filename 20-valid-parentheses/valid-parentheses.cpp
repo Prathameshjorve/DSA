@@ -5,36 +5,55 @@ public:
         stack<char>st;
 
         for(char & ch :s){
+            if(ch =='(')
+                st.push(')');
 
-            if(st.empty() || ch == '(' || ch == '[' || ch == '{' ){
-                st.push(ch);
-                continue;
+            else if(ch =='{')
+                st.push('}');
+
+            else if(ch =='[')
+                st.push(']');
+
+            else if(st.empty()|| st.top() != ch){
+                return false;
             }
-
-            if(ch == ')'){
-                if(st.top() == '(')
-                    st.pop();
-                
-                else
-                    return false;
+            else {
+                st.pop();
             }
-                else if(ch=='}'){
-                    if(st.top()=='{')
-                        st.pop();
-
-                    else
-                        return false;
-
-
-                }else if(ch==']'){
-                    if(st.top()=='[')
-                        st.pop();
-
-                    else
-                        return false;
-        }
         }
         return st.empty();
+
+
+
+        //     if(st.empty() || ch == '(' || ch == '[' || ch == '{' ){
+        //         st.push(ch);
+        //         continue;
+        //     }
+
+        //     if(ch == ')'){
+        //         if(st.top() == '(')
+        //             st.pop();
+                
+        //         else
+        //             return false;
+        //     }
+        //         else if(ch=='}'){
+        //             if(st.top()=='{')
+        //                 st.pop();
+
+        //             else
+        //                 return false;
+
+
+        //         }else if(ch==']'){
+        //             if(st.top()=='[')
+        //                 st.pop();
+
+        //             else
+        //                 return false;
+        // }
+        // }
+        // return st.empty();
 
         
         
