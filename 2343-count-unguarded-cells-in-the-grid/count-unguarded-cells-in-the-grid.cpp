@@ -51,7 +51,8 @@ public:
             grid[i][j] = 2;
 
         }
-        //marks walls position
+        // marks walls position
+        // 
 
         for(vector<int> & vec:walls){
             int i= vec[0];
@@ -80,7 +81,7 @@ public:
             }
         }
         return count;
-        ///
+        
 
         
         
