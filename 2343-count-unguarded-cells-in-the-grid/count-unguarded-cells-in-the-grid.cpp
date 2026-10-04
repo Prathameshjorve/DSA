@@ -18,14 +18,14 @@ public:
             grid[i][col] =1;//marking it as gaurded
         }
 
-        //for left 
+        //for left side
          for(int j=col-1;j>=0;j--){
             if(grid[row][j] == 2|| grid[row][j] == 3){
                 break;
             }
             grid[row][j] =1;//marking it as gaurded
         }
-        // for right
+        // for right side
 
          for(int j=col+1; j<grid[0].size(); j++){
             if(grid[row][j] == 2|| grid[row][j] == 3){
@@ -80,8 +80,9 @@ public:
             }
         }
         return count;
-
         ///
+
+        
         
     }
 };
