@@ -3,9 +3,9 @@ public:
     bool canMakeSubsequence(string str1, string str2) {
         int m = str1.length();
         int n = str2.length();
-        if(n > m){
-            return false;
-        }
+        // if(n > m){
+        //     return false;
+        // }
         
 
         int i = 0;
