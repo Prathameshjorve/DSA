@@ -5,13 +5,18 @@ public:
 
         for(char &ch: s){
             if(ch =='*'){
+
                 if(result.length() > 0) 
+                
                     result.pop_back();
             }else if(ch == '#'){
+
                 result += result;// current len n then it will 2 times
 
             }else if( ch == '%'){
+
                 reverse(begin(result), end(result));
+
             }else{
                 result += ch;
             }
@@ -19,7 +24,6 @@ public:
 
         return result;
 
-        
 
 
     }
