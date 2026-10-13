@@ -27,6 +27,10 @@ public:
             maxPairSum = max(maxPairSum, inactiveBlocks[i] + inactiveBlocks[i-1]);
         }
         return maxPairSum +  activeCount;
+        
+
+        
+        // 
         // 
         
     }
