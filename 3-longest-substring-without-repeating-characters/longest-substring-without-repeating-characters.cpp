@@ -11,7 +11,7 @@ public:
 
             f[s[high]]++;//map madhi add kartoye array che element
 
-            int len=high-low+1;
+            int len = high-low+1;
             while(f.size() < len){
 
                 f[s[low]]--;
