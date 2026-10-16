@@ -18,7 +18,7 @@ public:
         for(high=0; high < n; high++){
             f[s[high]]++;
 
-            int maxcnt = find(f);//counting the char from the array and stroring
+            int maxcnt = find(f);//counting the char means frequency 
             int len=high-low+1;//calculating the leng of  the substr
             int diff =len-maxcnt;// calculting the total count of char 
             
